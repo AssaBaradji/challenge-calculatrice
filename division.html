@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Division</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h2>Division</h2>
+    <form onsubmit="calculate('divide'); return false;">
+      <input type="number" id="num1" placeholder="Entrez le premier nombre" name="" required >
+      <input type="number" id="num2" placeholder="Entrez le deuxieme nombre" name="" required >
+      <button id="calculate-btn" type="submit">Calculer</button>
+      <button onclick="window.history.back();" type="button" class="return-btn">Retour</button>
+        
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

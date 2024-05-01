@@ -1,0 +1,91 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("image.jpg");
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 5px;
+    margin: 10px;
+    color: aliceblue;
+}
+.menu {
+    content: "";
+    position: absolute;
+
+}
+.btn {
+    display: inline-block;
+    padding: 35px;
+    font-size: 160px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin: 25px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculate-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#calculate-btn:hover {
+    background-color: #45a049;
+}
+a {
+    text-decoration: none;
+}
+.return-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
