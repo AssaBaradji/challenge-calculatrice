@@ -1,29 +1,40 @@
 function calculate(operation) {
-    var num1 = parseFloat(document.getElementById("num1").value);
-    var num2 = parseFloat(document.getElementById("num2").value);
-    var result;
+  var num1 = parseFloat(document.getElementById("num1").value);
+  var num2 = parseFloat(document.getElementById("num2").value);
 
-    switch (operation) {
+  var result;
+
+  switch (operation) {
       case 'add':
-        result = num1 + num2;
-        break;
+          var num3 = parseFloat(document.getElementById("num3").value);
+          if (!isNaN(num3)) {
+              result = num1 + num2 + num3;
+          } else {
+              result = num1 + num2;
+          }
+          break;
       case 'subtract':
-        result = num1 - num2;
-        break;
+          result = num1 - num2;
+          break;
       case 'multiply':
-        result = num1 * num2;
-        break;
+          var num3 = parseFloat(document.getElementById("num3").value);
+          if (!isNaN(num3)) {
+              result = num1 * num2 * num3;
+          } else {
+              result = num1 * num2;
+          }
+          break;
       case 'divide':
-        if (num2 === 0) {
-          document.getElementById("result").innerHTML = "Division par zéro impossible";
-          return;
-        } else {
-          result = num1 / num2;
-        }
-        break;
+          if (num2 === 0) {
+              document.getElementById("result").innerHTML = "Division par zéro impossible";
+              return;
+          } else {
+              result = num1 / num2;
+          }
+          break;
       default:
-        break;
-    }
-
-    document.getElementById("result").innerHTML = "Résultat : " + result;
+          break;
   }
+
+  document.getElementById("result").innerHTML = "Résultat : " + result;
+}
