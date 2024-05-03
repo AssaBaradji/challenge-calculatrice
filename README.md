@@ -21,7 +21,7 @@ spécifique.
 2. Ouvrez le fichier `index.html` dans votre navigateur web.
 
 ## Contribuer
-Test
+
 Les contributions sont les bienvenues ! Pour les bugs et les suggestions, veuillez soumettre une issue. Pour les ajouts de fonctionnalités, veuillez ouvrir une pull request.
 
 ## Auteurs
